@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Node/Frontend
+node_modules/
+npm-debug.log
+yarn-error.log
+dist/
+.parcel-cache/
+
+# Logs
+logs/
+*.log
+
+# Data & Sensitive Files
+data/
+*.db
+*.sqlite
+*.sqlite3
+*.csv
+*.xlsx
+*.xls
+customer_data.txt
+employee_records.txt
+patient_record.txt
+meeting_notes.txt
+demo_files/
+monitored_files/
+api_keys.txt
+api_credentials.txt
+
+# Uploads & Temporary
+uploads/
+*.tmp
+.temp/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Local config
+.env.local
+*.pem
+*.key

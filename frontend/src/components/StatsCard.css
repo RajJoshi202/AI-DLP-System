@@ -1,0 +1,111 @@
+.stats-card {
+    padding: var(--spacing-md);
+    position: relative;
+    overflow: hidden;
+}
+
+.stats-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+}
+
+.stats-card.success::before {
+    background: linear-gradient(90deg, var(--accent-success), #059669);
+}
+
+.stats-card.warning::before {
+    background: linear-gradient(90deg, var(--accent-warning), #d97706);
+}
+
+.stats-card.danger::before {
+    background: linear-gradient(90deg, var(--accent-danger), #dc2626);
+}
+
+.stats-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-sm);
+}
+
+.stats-icon-wrapper {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(139, 92, 246, 0.2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats-card.success .stats-icon-wrapper {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(5, 150, 105, 0.2));
+}
+
+.stats-card.warning .stats-icon-wrapper {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(217, 119, 6, 0.2));
+}
+
+.stats-card.danger .stats-icon-wrapper {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.2), rgba(220, 38, 38, 0.2));
+}
+
+.stats-icon {
+    color: var(--accent-primary);
+}
+
+.stats-card.success .stats-icon {
+    color: var(--accent-success);
+}
+
+.stats-card.warning .stats-icon {
+    color: var(--accent-warning);
+}
+
+.stats-card.danger .stats-icon {
+    color: var(--accent-danger);
+}
+
+.stats-trend {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.stats-trend.up {
+    background: rgba(16, 185, 129, 0.2);
+    color: var(--accent-success);
+}
+
+.stats-trend.down {
+    background: rgba(239, 68, 68, 0.2);
+    color: var(--accent-danger);
+}
+
+.stats-content {
+    margin-top: var(--spacing-sm);
+}
+
+.stats-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+    line-height: 1;
+}
+
+.stats-title {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin: 0.5rem 0 0 0;
+    font-weight: 500;
+}
